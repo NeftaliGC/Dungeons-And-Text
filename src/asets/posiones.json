@@ -1,0 +1,17 @@
+[
+    {
+        "nombre": "Posion de Vida",
+        "accion": 1,
+        "id": 1
+    },
+    {
+        "nombre": "Posion de Poder",
+        "accion": 1,
+        "id": 2
+    },
+    {
+        "nombre": "Posion de Defensa",
+        "accion": 1,
+        "id": 3
+    }
+]

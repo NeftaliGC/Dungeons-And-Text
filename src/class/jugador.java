@@ -1,3 +1,5 @@
+import java.util.concurrent.TransferQueue;
+
 import javax.xml.transform.Templates;
 
 public class jugador {
@@ -18,10 +20,13 @@ public class jugador {
     }
 
     public int ataque() {
-        return 0;
+        int ataque = random.generateRandom(1, poder);
+        //ataque = ataque + mochila.mano.poder;
+        return ataque;
     }
 
-    public int armor() {
-        return 0;
+    public int proteccion() {
+        int proteccion = random.generateRandom(1, defensa);
+        return proteccion;
     }
 }
