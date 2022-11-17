@@ -1,7 +1,3 @@
-import java.util.concurrent.TransferQueue;
-
-import javax.xml.transform.Templates;
-
 public class jugador {
     private int vida = 10;
     private int poder = 5;

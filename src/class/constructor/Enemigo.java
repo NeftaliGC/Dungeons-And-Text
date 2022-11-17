@@ -1,3 +1,4 @@
+package constructor;
 
 /**
  * Write a description of class Enemigos here.
@@ -5,7 +6,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Enemigos
+public class Enemigo
 {
     public static void EnemyRNG( String args[] ) {
         int min = 1;

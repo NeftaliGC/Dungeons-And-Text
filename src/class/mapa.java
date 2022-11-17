@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Generador {
+public class mapa {
 
     private int ns; //Numero de salas//
     private int [][] mapa; //arreglo de mapa dependiente a la variable ns//
