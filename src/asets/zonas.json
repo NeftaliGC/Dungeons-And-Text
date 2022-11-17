@@ -1,106 +1,98 @@
 [
     {
-        "nombre": "",
+        "nombre": "Entrada",
         "id": 1
     },
     {
-        "nombre": "",
+        "nombre": "Sala del trono",
         "id": 2
     },
     {
-        "nombre": "",
+        "nombre": "Comedor",
         "id": 3
     },
     {
-        "nombre": "",
-        "id": 3
-    },
-    {
-        "nombre": "",
+        "nombre": "Almacén",
         "id": 4
     },
     {
-        "nombre": "",
+        "nombre": "Dormitorio",
         "id": 5
     },
     {
-        "nombre": "",
+        "nombre": "Dormitorio Femenino",
         "id": 6
     },
     {
-        "nombre": "",
+        "nombre": "Dormitorio Real",
         "id": 7
     },
     {
-        "nombre": "",
+        "nombre": "Salon",
         "id": 8
     },
     {
-        "nombre": "",
+        "nombre": "Calabozo de prisioneros",
         "id": 9
     },
     {
-        "nombre": "",
+        "nombre": "Calabozo de la tortura",
         "id": 10
     },
     {
-        "nombre": "",
+        "nombre": "Patio",
         "id": 11
     },
     {
-        "nombre": "",
+        "nombre": "Baños",
         "id": 12
     },
     {
-        "nombre": "",
+        "nombre": "Baños reales",
         "id": 13
     },
     {
-        "nombre": "",
+        "nombre": "Habitación del pato Real",
         "id": 14
     },
     {
-        "nombre": "",
+        "nombre": "Vestíbulo",
         "id": 15
     },
     {
-        "nombre": "",
+        "nombre": "Sala de Arte",
         "id": 16
     },
     {
-        "nombre": "",
+        "nombre": "Sala de entrenamiento",
         "id": 17
     },
     {
-        "nombre": "",
+        "nombre": "Oficina Misteriosa",
         "id": 18
     },
     {
-        "nombre": "",
+        "nombre": "Primer Torreón",
         "id": 19
     },
     {
-        "nombre": "",
+        "nombre": "Segundo Torreón",
         "id": 20
     },
     {
-        "nombre": "",
+        "nombre": "Habitacion Escondida",
         "id": 21
     },
     {
-        "nombre": "",
-        "id": 22
-    },
-    {
-        "nombre": "",
+        "nombre": "Sala de Tesoros",
         "id": 23
     },
     {
-        "nombre": "",
+        "nombre": "Huerto Secreto",
         "id": 24
     },
     {
-        "nombre": "",
+        "nombre": "Cabalazo (Almacen de cabalazas)",
         "id": 25
     }
 ]
