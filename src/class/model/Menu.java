@@ -1,3 +1,4 @@
+package model;
 import java.util.Scanner;
 /**
  * Write a description of class Menu here.

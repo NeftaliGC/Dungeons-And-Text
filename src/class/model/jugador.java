@@ -1,3 +1,8 @@
+package model;
+import controller.random;
+
+
+
 public class jugador {
     private int vida = 10;
     private int poder = 5;

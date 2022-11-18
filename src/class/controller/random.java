@@ -1,3 +1,4 @@
+package controller;
 public class random {
 
     public static int generateRandom(int min, int max) {
