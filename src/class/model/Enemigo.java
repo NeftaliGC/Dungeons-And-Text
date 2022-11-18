@@ -1,4 +1,4 @@
-package constructor;
+package model;
 
 /**
  * Write a description of class Enemigos here.

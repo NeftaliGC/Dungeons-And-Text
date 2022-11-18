@@ -1,4 +1,4 @@
-package constructor;
+package model;
 
 public class pocion {
 

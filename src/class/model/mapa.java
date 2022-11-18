@@ -1,4 +1,4 @@
-package constructor;
+package model;
 import java.util.Scanner;
 public class mapa {
 
