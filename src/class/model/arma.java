@@ -1,4 +1,4 @@
-package constructor;
+package model;
 public class arma {
     
     private String nombre;
