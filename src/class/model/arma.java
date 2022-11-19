@@ -1,4 +1,7 @@
 package model;
+
+import controller.random;
+
 public class arma {
     
     private String nombre;
