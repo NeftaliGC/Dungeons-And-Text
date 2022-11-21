@@ -2,126 +2,126 @@
     {
         "nombre": "Palo",
         "ataque": 1,
-        "id": 1
+        "id": 0
     },
     {
         "nombre": "Espada de madera",
         "ataque": 1,
-        "id": 2
+        "id": 1
     },
     {
         "nombre": "Arco",
         "ataque": 1,
-        "id": 3
+        "id": 2
     },
     {
         "nombre": "Bumerang",
         "ataque": 1,
-        "id": 4
+        "id": 3
     },
     {
         "nombre": "Espada rota",
         "ataque": 1,
-        "id": 5
+        "id": 4
     },
     {
         "nombre": "Espada normal",
         "ataque": 2,
-        "id": 6
+        "id": 5
     },
     {
         "nombre": "Mazo",
         "ataque": 2,
-        "id": 7
+        "id": 6
     },
     {
         "nombre": "Hacha",
         "ataque": 2,
-        "id": 8
+        "id": 7
     },
     {
         "nombre": "Pico",
         "ataque": 2,
-        "id": 9
+        "id": 8
     },
     {
         "nombre": "Pistola",
         "ataque": 2,
-        "id": 10
+        "id": 9
     },
     {
         "nombre": "Espada de acero forjado",
         "ataque": 3,
-        "id": 11
+        "id": 10
     },
     {
         "nombre": "Lanza poderosa",
         "ataque": 3,
-        "id": 12
+        "id": 11
     },
     {
         "nombre": "Guitarra magica",
         "ataque": 3,
-        "id": 13
+        "id": 12
     },
     {
         "nombre": "Varita magica",
         "ataque": 3,
-        "id": 14
+        "id": 13
     },
     {
         "nombre": "Arco ardiente",
         "ataque": 3,
-        "id": 15
+        "id": 14
     },
     {
         "nombre": "Daga encantada",
         "ataque": 4,
-        "id": 16
+        "id": 15
     },
     {
         "nombre": "Espada de fuego",
         "ataque": 4,
-        "id": 17
+        "id": 16
     },
     {
         "nombre": "Hacha vikinga",
         "ataque": 4,
-        "id": 18
+        "id": 17
     },
     {
         "nombre": "Espada maestra",
         "ataque": 4,
-        "id": 19
+        "id": 18
     },
     {
         "nombre": "Mazo pesados",
         "ataque": 4,
-        "id": 20
+        "id": 19
     },
     {
         "nombre": "Excalibur",
         "ataque": 5,
-        "id": 21
+        "id": 20
     },
     {
         "nombre": "Martillo magico",
         "ataque": 5,
-        "id": 22
+        "id": 21
     },
     {
         "nombre": "Arco encantado",
         "ataque": 5,
-        "id": 23
+        "id": 22
     },
     {
         "nombre": "Rayo Laser",
         "ataque": 5,
-        "id": 24
+        "id": 23
     },
     {
         "nombre": "Espadas del caos",
         "ataque": 5,
-        "id": 25
+        "id": 24
     }
 ]

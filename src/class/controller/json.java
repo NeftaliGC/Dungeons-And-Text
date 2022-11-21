@@ -1,33 +1,48 @@
 package controller;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
 
+import java.io.*;
 import org.json.*;
-import org.json.simple.JSONArray;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
-
-
 
 public class json {
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) {
 
-        JSONParser jsonParser = new JSONParser();
-        File f = new File("./Enemigos.json");
+        String a = leerJson("/asets/armas.json");
+        //String a = leerJson("./ejemplo/in.txt");
         
-        try (FileReader fReader = new FileReader("Enemigos.json")) {
-            Object obj = jsonParser.parse(fReader);
-            JSONArray enemigos = (JSONArray) obj;
-            System.out.println(enemigos);
+        //System.out.println(a);
+        JSONArray jArray = new JSONArray(a);
+        JSONObject jObject = jArray.optJSONObject(6);
 
-        } catch (IOException | ParseException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+        System.out.println(jObject.getInt("id"));
+
+    }
+
+    public static String leerJson(String url) {
+
+        String texto = "";
+        
+        try {
+            File f = new File(url);
+            System.out.println(f.exists()); //saber si encontro el archivo
+
+            BufferedReader bf = new BufferedReader(new FileReader(f.getPath()));
+            String temp = "";
+            String bfRead;
+
+            while ( ( bfRead = bf.readLine() ) != null ) {
+                // ciclo hasta que bfRead ya no tiene datos
+                temp = temp + bfRead; // guarda el texto
+            }
+
+            texto = temp;
+
+        } catch (Exception e) {
+            // TODO: handle exception
+            System.out.println("Archivo no encontrado");
         }
-        
+
+        return texto;
     }
 
 }
