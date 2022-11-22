@@ -7,7 +7,8 @@ public class json {
 
     public static void main(String[] args) {
 
-        String a = leerJson(".\\src\\class\\controller\\asets\\armas.json");
+        String archivo = "armas.json";
+        String a = leerJson("./src/asets/" + archivo);
         //String a = leerJson("./ejemplo/in.txt");
         
         //System.out.println(a);
