@@ -1,30 +1,21 @@
 package model;
-import java.util.Scanner;
 public class mapa {
 
     private int ns; //Numero de salas//
     private int [][] mapa; //arreglo de mapa dependiente a la variable ns//
 
+    public void setSalas(int salas){
+        this.ns = salas;
+    }
 
+    public void setMapa(int salas) {
+        this.mapa = new int[ns][ns];
+    }
 
-    public int DimeSalas(){
-        //Clase para especificar la cantidad de salas//
-
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Especifica la cantidad de salas a generar");
-        ns = sc.nextInt();
-        System.out.println("La cantidad de salas a generar es"+ns+"x"+ns);
+    public int getSalas() {
         return ns;
     }
 
-
-
-
-    public void PintaSalas(){
-        //Clase dedicada para generar las salas//
-        mapa = new int [ns][ns];
-        
-    }
 }
 
 

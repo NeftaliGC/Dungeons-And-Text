@@ -8,8 +8,12 @@ public class jugador {
     private int vida = 10;
     private int poder = 5;
     private int defensa = 5;
-    private mochila Mochila;
+    private mochila Mochila = new mochila();
+    private mano Mano = new mano();
 
+    public void setNombre(String name) {
+        this.Nombre = name;
+    }
 
     public int getVida() {
         return vida;

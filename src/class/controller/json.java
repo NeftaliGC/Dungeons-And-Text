@@ -5,27 +5,24 @@ import org.json.*;
 
 public class json {
 
-    public static void main(String[] args) {
+    public static JSONObject Jobject(String file, int index) throws Exception {
 
-        String archivo = "armas.json";
+        String archivo = file;
         String a = leerJson("./src/asets/" + archivo);
-        //String a = leerJson("./ejemplo/in.txt");
         
-        //System.out.println(a);
         JSONArray jArray = new JSONArray(a);
-        JSONObject jObject = jArray.optJSONObject(6);
+        JSONObject jObject = jArray.optJSONObject(index);
 
-        System.out.println(jObject.getInt("id"));
+        return jObject;
 
     }
 
-    public static String leerJson(String url) {
+    public static String leerJson(String url) throws Exception{
 
         String texto = "";
         
         try {
             File f = new File(url);
-            System.out.println(f.exists()); //saber si encontro el archivo
 
             BufferedReader bf = new BufferedReader(new FileReader(f.getPath()));
             String temp = "";
@@ -39,8 +36,7 @@ public class json {
             texto = temp;
 
         } catch (Exception e) {
-            // TODO: handle exception
-            System.out.println("Archivo no encontrado");
+            throw new Exception("Archivo no encontrado");
         }
 
         return texto;

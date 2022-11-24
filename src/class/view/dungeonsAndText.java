@@ -1,5 +1,5 @@
 package view;
-
+import controller.config;
 
 /**
  * main
@@ -7,7 +7,10 @@ package view;
 public class dungeonsAndText {
     public static void main(String[] args) {
         
+        config config = new config();
+
         titulo();
+        config.cfg();
         
     }
 
