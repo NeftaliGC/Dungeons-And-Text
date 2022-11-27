@@ -10,10 +10,19 @@ public class Menu{
     private String[] opciones;
     private int numeroOpciones;
     
+    
+    /** 
+     * @param op
+     * @return String
+     */
     public String dimeOpcion(int op){
         return this.opciones[op];
     }
 
+    
+    /** 
+     * @return int
+     */
     public int leeOpcion(){
         Scanner entrada;
         String cad;
@@ -22,11 +31,11 @@ public class Menu{
             try{
                 this.pinta();
                 entrada= new Scanner(System.in);
-                System.out.println("Selecciones una opcion: ");
+                System.out.println("Selecciona una opcion: ");
                 cad= entrada.next();
                 salida = Integer.parseInt(cad);
                 if(salida<1 || salida>this.numeroOpciones){
-                    System.out.println("La opcion debe estar entre 1 y ...");
+                    System.out.println("Elige una de las opciones disponibles.");
                     salida = -1;
                 }
             }catch(NumberFormatException e){
@@ -37,6 +46,10 @@ public class Menu{
         return salida;
     }
 
+    
+    /** 
+     * @param op
+     */
     public void addOpcion(String op){
         for(int i=0;i<this.opciones.length;i++){
             if(this.opciones[i]==null){
@@ -60,5 +73,15 @@ public class Menu{
                 break;
             }
         }
+    }
+
+    
+    /** 
+     * @return int
+     */
+    public int large() {
+        int l;
+        l = opciones.length;
+        return l;
     }
 }

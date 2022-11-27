@@ -1,7 +1,7 @@
 package model;
 
 public class sala {
-    Enemigo enemigo;
-
+    private Enemigo enemigo;
+    
     
 }

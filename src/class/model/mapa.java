@@ -2,16 +2,19 @@ package model;
 public class mapa {
 
     private int ns; //Numero de salas//
-    private int [][] mapa; //arreglo de mapa dependiente a la variable ns//
+    private sala [][] mapa; //arreglo de mapa dependiente a la variable ns//
 
-    public void setSalas(int salas){
+    /** 
+     * @param salas
+     */
+    public mapa(int salas) {
+        this.mapa = new sala[salas][salas];
         this.ns = salas;
     }
-
-    public void setMapa(int salas) {
-        this.mapa = new int[ns][ns];
-    }
-
+    
+    /** 
+     * @return int
+     */
     public int getSalas() {
         return ns;
     }

@@ -12,14 +12,26 @@ public class pocion {
         this.nombre = name;
     }
 
+    
+    /** 
+     * @return String
+     */
     public String getNombre() {
         return this.nombre;
     }
 
+    
+    /** 
+     * @return int
+     */
     public int getNivel() {
         return this.nivel;
     }
 
+    
+    /** 
+     * @return int
+     */
     public int getTipo() {
         return this.tipo;
     }

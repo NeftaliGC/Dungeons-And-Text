@@ -5,6 +5,13 @@ import org.json.*;
 
 public class json {
 
+    
+    /** 
+     * @param file
+     * @param index
+     * @return JSONObject
+     * @throws Exception
+     */
     public static JSONObject Jobject(String file, int index) throws Exception {
 
         String archivo = file;
@@ -17,6 +24,12 @@ public class json {
 
     }
 
+    
+    /** 
+     * @param url
+     * @return String
+     * @throws Exception
+     */
     public static String leerJson(String url) throws Exception{
 
         String texto = "";
