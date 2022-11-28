@@ -3,14 +3,9 @@ package model;
 public class tesoro {
     private String nombre;
 
-    
-    /** 
-     * @param name
-     */
-    public void setNombre(String name) {
-        this.nombre = name;
+    public tesoro(String nombre) {
+        this.nombre = nombre;
     }
-
     
     /** 
      * @return String

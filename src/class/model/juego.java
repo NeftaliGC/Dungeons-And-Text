@@ -1,9 +1,13 @@
 package model;
 
+import controller.config;
+
 public class juego {
     private boolean configurado = false;
     private jugador player;
     private mapa map;
+
+    private config  conf = new config();
 
     public juego() {
         player = new jugador();
@@ -25,8 +29,15 @@ public class juego {
         this.player.setNombre(name);
     }
     
-    public void setMapaAtributos(int s) {
+    public void setMapaAtributos(int s) throws Exception {
         this.map = new mapa(s);
+        
+        for (int i = 0; i < s; i++) {
+            for (int j = 0; j < s; j++) {
+                sala sala = conf.createSala();
+                map.setSala(sala, i, j);
+            }
+        }
     }
     
     /** 

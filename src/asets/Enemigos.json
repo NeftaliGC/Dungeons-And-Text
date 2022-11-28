@@ -37,7 +37,7 @@
     },
     {
         "id": 7,
-        "nombre": "Escorpión Gigante",
+        "nombre": "Escorpion Gigante",
         "Poder": 4,
         "Defensa": 2
     },
@@ -55,19 +55,19 @@
     },
     {
         "id": 10,
-        "nombre": "Espíritu",
+        "nombre": "Espiritu",
         "Poder": 1,
         "Defensa": 3
     },
     {
         "id": 11,
-        "nombre": "Espíritu de Fuego",
+        "nombre": "Espiritu de Fuego",
         "Poder": 3,
         "Defensa": 3
     },
     {
         "id": 12,
-        "nombre": "Espíritu de Hielo",
+        "nombre": "Espiritu de Hielo",
         "Poder": 3,
         "Defensa": 3
     },
@@ -109,7 +109,7 @@
     },
     {
         "Id": 19,
-        "nombre": "Murciélago",
+        "nombre": "Murcielago",
         "Poder": 2,
         "Defensa": 1
     },

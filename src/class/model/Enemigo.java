@@ -14,22 +14,11 @@ public class Enemigo
     private int poder;
     private int defensa;
 
-    
-    /** 
-     * @param name
-     */
-    public void setNombre(String name) {
-        this.nombre = name;
+    public Enemigo(String n, int p, int d) {
+        this.nombre = n;
+        this.poder = p;
+        this.defensa = d;
     }
-
-    
-    /** 
-     * @param power
-     */
-    public void setPoder(int power) {
-        this.poder = power;
-    }
-
     
     /** 
      * @return String
@@ -44,6 +33,10 @@ public class Enemigo
      */
     public int getPoder() {
         return this.poder;
+    }
+
+    public int getDefensa() {
+        return this.defensa;
     }
 
     

@@ -1,27 +1,30 @@
 package view;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 import controller.config;
+import controller.random;
+import model.Enemigo;
 import model.Menu;
 import model.juego;
 import model.jugador;
 import model.mapa;
+import model.sala;
 
 /**
  * main
  */
 public class dungeonsAndText {
 
+    public static jugador PLAYER;
+    public static mapa MAPA;
+
     /**
      * @param args
-     * @throws IOException
-     * @throws InterruptedException
+     * @throws Exception
      */
-    public static void main(String[] args) throws InterruptedException, IOException {
-        jugador PLAYER;
-        mapa MAPA;
+    public static void main(String[] args) throws Exception {
+
         boolean ejecucion = true;
         int ns, v;
         String opcion;
@@ -34,6 +37,13 @@ public class dungeonsAndText {
         inicio.addOpcion("Configurar");
         inicio.addOpcion("Creditos");
         inicio.addOpcion("Salir al escritorio");
+
+        Menu jMenu = new Menu(5);
+        jMenu.addOpcion("Combatir");
+        jMenu.addOpcion("Registrar sala");
+        jMenu.addOpcion("Identificar Enemigo");
+        jMenu.addOpcion("Moverse de sala");
+        jMenu.addOpcion("Mochila");
 
         do {
             new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor(); // limpia pantalla
@@ -48,6 +58,27 @@ public class dungeonsAndText {
             switch (flujo) {
                 case 1:
                     if (config.configCheck(game.getCofig())) {
+                        // inGame.game();
+
+                        int x = random.generateRandom(0, MAPA.getSalas() - 1);
+                        int y = random.generateRandom(0, MAPA.getSalas() - 1);
+
+                        sala s;
+
+                        do {
+
+                            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor(); // limpia pantalla
+                            s = MAPA.getSala(x, y);
+                            Enemigo e = s.getEnemigo();
+                            System.out.println(PLAYER.getNombre() + " estas en " + s.getNombre() + " con " + e.getNombre());
+                            System.out.println("¿Que haces?");
+                            for (int i = 0; i < jMenu.large(); i++) {
+                                jMenu.dimeOpcion(i);
+                            }
+                            jMenu.leeOpcion();
+                            
+
+                        } while (true);
 
                     } else {
                         mensaje("Configura el juego antes de empezar a jugar. Pulsa ENTER para continuar: ");
@@ -60,13 +91,16 @@ public class dungeonsAndText {
                         opcion = mensaje("Escribe tu nombre de jugador:");
                         ns = option(
                                 "Las salas se organizaran de forma cuadrada, ejemplo 5x5 ó 2x2. \n Escribe el numero de salas, mayor a 1 y menor a 6: ");
+
                         System.out.println(
                                 "Tú nombre es: " + opcion + "\n" + "El mapa tendra el tamaño de: " + ns + "x" + ns);
-                        v = option("¿Estas seguro de esta configuración? 1 : Si, 2 : No");
+                        v = option("¿Estas seguro de esta configuración? 1 : Si, 2 : No => ");
                         if (v == 1) {
                             game.setJugadorAtributos(opcion);
                             game.setMapaAtributos(ns);
                             game.setCofig(true);
+                            PLAYER = game.getJugador();
+                            MAPA = game.getMapa();
                         } else {
                             System.out.println("Vuelve a configurar el juego.");
                         }
@@ -89,10 +123,6 @@ public class dungeonsAndText {
                     break;
                 case 4:
                     ejecucion = false;
-
-                    break;
-                default:
-                    System.out.println("Debes elegir una de las opciones");
 
                     break;
             }

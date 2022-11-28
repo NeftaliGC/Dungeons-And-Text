@@ -19,6 +19,14 @@ public class mapa {
         return ns;
     }
 
+    public void setSala(sala s, int m, int n) {
+        this.mapa[m][n] = s;
+    }
+
+    public sala getSala(int n, int m) {
+        return this.mapa[n][m];
+    }
+
 }
 
 

@@ -1,30 +1,14 @@
 package model;
 
-import controller.random;
-
 public class arma {
     
     private String nombre;
     private int poder;
-
     
-
-    
-    /** 
-     * @param name
-     */
-    public void setNombre(String name) {
-        this.nombre = name;
+    public arma(String n, int p) {
+        this.nombre = n;
+        this.poder = p;
     }
-
-    
-    /** 
-     * @param power
-     */
-    public void setPoder(int power) {
-        this.poder = power;
-    }
-
     
     /** 
      * @return String

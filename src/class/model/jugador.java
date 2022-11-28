@@ -16,6 +16,9 @@ public class jugador {
         this.Mano = new mano();
     }
 
+    public String getNombre() {
+        return this.Nombre;
+    }
     
     /** 
      * @param name
