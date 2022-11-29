@@ -15,7 +15,7 @@ public class json {
     public static JSONArray Jobject(String file/* , /*int index*/) throws Exception {
 
         String archivo = file;
-        String a = leerJson("./src/asets/" + archivo);
+        String a = leerJson("./src/assets/" + archivo);
         
         JSONArray jArray = new JSONArray(a);
         //JSONObject jObject = jArray.optJSONObject(index);

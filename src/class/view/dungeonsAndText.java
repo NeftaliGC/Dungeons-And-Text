@@ -58,6 +58,18 @@ public class dungeonsAndText {
         moverse.addOpcion("Moverse al Este");
         moverse.addOpcion("Moverse al Oeste");
 
+        Menu mMochila = new Menu(2);
+        mMochila.addOpcion("Abrir bolsillo de pociones");
+        mMochila.addOpcion("Abrir bolsillo de armas");
+
+        Menu bPociones = new Menu(2);
+        bPociones.addOpcion("Usar una pocion");
+        bPociones.addOpcion("Tirar pocion");
+
+        Menu bArmas = new Menu(2);
+        bArmas.addOpcion("Equipar arma");
+        bArmas.addOpcion("Tirar arma");
+
         do {
             new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor(); // limpia pantalla
             titulo();
@@ -206,8 +218,14 @@ public class dungeonsAndText {
                                     }
                                     break;
                                 case 5:
+                                    System.out.println("¿Que deseas hacer?");
+                                    for (int i = 0; i < mMochila.large(); i++) {
+                                        mMochila.dimeOpcion(i);
+                                    }
+                                    op = mMochila.leeOpcion();
+
                                     
-                                    break;
+
                                 default:
                                     break;
                             }

@@ -19,6 +19,7 @@ public class config {
     JSONArray pociones;
     JSONArray zonas;
     JSONArray tesoros;
+    boolean salaT = false;
 
     
     /** 
@@ -84,7 +85,6 @@ public class config {
         //JSONObject jObject = jArray.optJSONObject(index);
         setObjectsOnSala();
         sala s = null;
-        boolean salaT = false;
         int i = random.generateRandom(0, 24);
         JSONObject enemigo = enemigos.getJSONObject(i);
         i = random.generateRandom(0, 23);

@@ -9,6 +9,24 @@ public class mochila {
         this.Pociones = new pocion[tamañoPociones];
     }
 
+    public String armasDatos() {
+        String s = "";
+        for (int i = 0; i < arsenal.length; i++) {
+            s = s + "< " + arsenal[i].getNombre() + " con poder de: " + arsenal[i].getPoder() + " >";
+        }
+
+        return s;
+    }
+
+    public String pocionesDatos() {
+        String s = "";
+        for (int i = 0; i < Pociones.length; i++) {
+            s = s + "< " + Pociones[i].getNombre() + " con un nivel de: " + Pociones[i].getNivel() + " >";
+        }
+
+        return s;
+    }
+
     
     /** 
      * @param a
