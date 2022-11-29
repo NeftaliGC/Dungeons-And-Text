@@ -1,98 +1,98 @@
 [
     {
         "nombre": "Entrada",
-        "id": 1
+        "id": 0
     },
     {
         "nombre": "Sala del trono",
-        "id": 2
+        "id": 1
     },
     {
         "nombre": "Comedor",
-        "id": 3
+        "id": 2
     },
     {
         "nombre": "Almacen",
-        "id": 4
+        "id": 3
     },
     {
         "nombre": "Dormitorio",
-        "id": 5
+        "id": 4
     },
     {
         "nombre": "Dormitorio Femenino",
-        "id": 6
+        "id": 5
     },
     {
         "nombre": "Dormitorio Real",
-        "id": 7
+        "id": 6
     },
     {
         "nombre": "Salon",
-        "id": 8
+        "id": 7
     },
     {
         "nombre": "Calabozo de prisioneros",
-        "id": 9
+        "id": 8
     },
     {
         "nombre": "Calabozo de la tortura",
-        "id": 10
+        "id": 9
     },
     {
         "nombre": "Patio",
-        "id": 11
+        "id": 10
     },
     {
         "nombre": "Baños",
-        "id": 12
+        "id": 11
     },
     {
         "nombre": "Baños reales",
-        "id": 13
+        "id": 12
     },
     {
         "nombre": "Habitación del pato Real",
-        "id": 14
+        "id": 13
     },
     {
         "nombre": "Vestíbulo",
-        "id": 15
+        "id": 14
     },
     {
         "nombre": "Sala de Arte",
-        "id": 16
+        "id": 15
     },
     {
         "nombre": "Sala de entrenamiento",
-        "id": 17
+        "id": 16
     },
     {
         "nombre": "Oficina Misteriosa",
-        "id": 18
+        "id": 17
     },
     {
         "nombre": "Primer Torreon",
-        "id": 19
+        "id": 18
     },
     {
         "nombre": "Segundo Torreon",
-        "id": 20
+        "id": 19
     },
     {
         "nombre": "Habitacion Escondida",
-        "id": 21
+        "id": 20
     },
     {
         "nombre": "Sala de Tesoros",
-        "id": 23
+        "id": 21
     },
     {
         "nombre": "Huerto Secreto",
-        "id": 24
+        "id": 22
     },
     {
         "nombre": "Cabalazo (Almacen de cabalazas)",
-        "id": 25
+        "id": 23
     }
 ]

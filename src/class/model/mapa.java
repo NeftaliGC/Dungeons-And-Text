@@ -19,10 +19,22 @@ public class mapa {
         return ns;
     }
 
+    
+    /** 
+     * @param s
+     * @param m
+     * @param n
+     */
     public void setSala(sala s, int m, int n) {
         this.mapa[m][n] = s;
     }
 
+    
+    /** 
+     * @param n
+     * @param m
+     * @return sala
+     */
     public sala getSala(int n, int m) {
         return this.mapa[n][m];
     }

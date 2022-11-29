@@ -1,150 +1,150 @@
 [
     {
-        "id": 1,
+        "id": 0,
         "nombre": "Esqueleto",
         "Poder": 2,
         "Defensa": 1
     },
     {
-        "id": 2,
+        "id": 1,
         "nombre": "Araña",
         "Poder": 3,
         "Defensa": 3
     },
     {
-        "id": 3,
+        "id": 2,
         "nombre": "Golem",
         "Poder": 2,
         "Defensa": 5
     },
     {
-        "id": 4,
+        "id": 3,
         "nombre": "Rata",
         "Poder": 1,
         "Defensa": 1
     },
     {
-        "id": 5,
+        "id": 4,
         "nombre": "Rata Gigante",
         "Poder": 3,
         "Defensa": 3
     },
     {
-        "id": 6,
+        "id": 5,
         "nombre": "Minotauro",
         "Poder": 8,
         "Defensa": 7
     },
     {
-        "id": 7,
+        "id": 6,
         "nombre": "Escorpion Gigante",
         "Poder": 4,
         "Defensa": 2
     },
     {
-        "id": 8,
+        "id": 7,
         "nombre": "Esqueleto Armado",
         "Poder": 5,
         "Defensa": 4
     },
     {
-        "id": 9,
+        "id": 8,
         "nombre": "Cria de dragon",
         "Poder": 10,
         "Defensa": 10
     },
     {
-        "id": 10,
+        "id": 9,
         "nombre": "Espiritu",
         "Poder": 1,
         "Defensa": 3
     },
     {
-        "id": 11,
+        "id": 10,
         "nombre": "Espiritu de Fuego",
         "Poder": 3,
         "Defensa": 3
     },
     {
-        "id": 12,
+        "id": 11,
         "nombre": "Espiritu de Hielo",
         "Poder": 3,
         "Defensa": 3
     },
     {
-        "id": 13,
+        "id": 12,
         "nombre": "Fantasma",
         "Poder": 2,
         "Defensa": 3
     },
     {
-        "id": 14,
+        "id": 13,
         "nombre": "Esqueleto Mago",
         "Poder": 6,
         "Defensa": 2
     },
     {
-        "id": 15,
+        "id": 14,
         "nombre": "Demonio menor",
         "Poder": 2,
         "Defensa": 2
     },
     {
-        "id": 16,
+        "id": 15,
         "nombre": "Calavera Fantasma",
         "Poder": 3,
         "Defensa": 1
     },
     {
-        "id": 17,
+        "id": 16,
         "nombre": "Slime",
         "Poder": 1,
         "Defensa": 1
     },
     {
-        "id": 18,
+        "id": 17,
         "nombre": "Zombie",
         "Poder": 1,
         "Defensa": 1
     },
     {
-        "Id": 19,
+        "Id": 18,
         "nombre": "Murcielago",
         "Poder": 2,
         "Defensa": 1
     },
     {
-        "id": 20,
+        "id": 19,
         "nombre": "Nigromante",
         "Poder": 8,
         "Defensa": 3
     },
     {
-        "id": 21,
+        "id": 20,
         "nombre": "Momia",
         "Poder": 4,
         "Defensa": 5
     },
     {
-        "id": 22,
+        "id": 21,
         "nombre": "Observador",
         "Poder": 5,
         "Defensa": 2
     },
     {
-        "id": 23,
+        "id": 22,
         "nombre": "Golem de Roca",
         "Poder": 3,
         "Defensa": 10
     },
     {
-        "id": 24,
+        "id": 23,
         "nombre": "Ent",
         "Poder": 8,
         "Defensa": 10
     },
     {
-        "id": 25,
+        "id": 24,
         "nombre": "Abogado exigente",
         "Poder": 15,
         "Defensa": 10

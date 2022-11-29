@@ -9,6 +9,17 @@ public class mano {
 
     
     /** 
+     * @return int
+     */
+    public int pArma() {
+        int p;
+        p = this.Mano[0].getPoder();
+
+        return p;
+    }
+
+    
+    /** 
      * @param a
      */
     public void agregarArma(arma a) {
@@ -18,7 +29,6 @@ public class mano {
     public void tirarArma() {
 
     }
-
     
     /** 
      * @return arma

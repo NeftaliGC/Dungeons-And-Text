@@ -35,6 +35,10 @@ public class Enemigo
         return this.poder;
     }
 
+    
+    /** 
+     * @return int
+     */
     public int getDefensa() {
         return this.defensa;
     }

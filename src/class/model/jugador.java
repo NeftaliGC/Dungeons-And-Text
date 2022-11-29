@@ -9,13 +9,19 @@ public class jugador {
     private int poder = 5;
     private int defensa = 5;
     private mochila Mochila;
+    private arma puño = new arma("Puño", 0);
     private mano Mano;
 
     public jugador() {
         this.Mochila = new mochila(3, 2);
         this.Mano = new mano();
+        this.Mano.agregarArma(puño);
     }
 
+    
+    /** 
+     * @return String
+     */
     public String getNombre() {
         return this.Nombre;
     }
@@ -31,12 +37,34 @@ public class jugador {
     /** 
      * @return int
      */
+    public int poderArmaEquipada() {
+        int p;
+        p = this.Mano.pArma();
+        return p;
+    }
+
+    
+    /** 
+     * @return int
+     */
     public int getVida() {
         return vida;
     }
 
-    public void setVida() {
-        
+    
+    /** 
+     * @param v
+     */
+    public void setVida(int v) {
+        this.vida = this.vida + v;
+    }
+
+    
+    /** 
+     * @param a
+     */
+    public void setArma(arma a) {
+        this.Mano.agregarArma(a);
     }
 
     
@@ -84,17 +112,19 @@ public class jugador {
     
     /** 
      * @param arma
+     * @throws Exception
      */
-    public void recogerArma(arma arma) {
-        
+    public void recogerArma(arma arma) throws Exception {
+        this.Mochila.addArma(arma);
     }
 
     
     /** 
      * @param pocion
+     * @throws Exception
      */
-    public void recogerPocion(pocion pocion) {
-
+    public void recogerPocion(pocion pocion) throws Exception {
+        this.Mochila.addPocion(pocion);
     }
 
     
@@ -111,6 +141,14 @@ public class jugador {
      */
     public void cambiarArma(arma arma) {
 
+    }
+
+    
+    /** 
+     * @return arma
+     */
+    public arma getPuño() {
+        return this.puño;
     }
 
 }

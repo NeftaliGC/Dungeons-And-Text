@@ -12,15 +12,16 @@ public class json {
      * @return JSONObject
      * @throws Exception
      */
-    public static JSONObject Jobject(String file, int index) throws Exception {
+    public static JSONArray Jobject(String file/* , /*int index*/) throws Exception {
 
         String archivo = file;
         String a = leerJson("./src/asets/" + archivo);
         
         JSONArray jArray = new JSONArray(a);
-        JSONObject jObject = jArray.optJSONObject(index);
+        //JSONObject jObject = jArray.optJSONObject(index);
 
-        return jObject;
+        //return jObject;
+        return jArray;
 
     }
 

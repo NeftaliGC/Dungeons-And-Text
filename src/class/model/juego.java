@@ -29,6 +29,11 @@ public class juego {
         this.player.setNombre(name);
     }
     
+    
+    /** 
+     * @param s
+     * @throws Exception
+     */
     public void setMapaAtributos(int s) throws Exception {
         this.map = new mapa(s);
         

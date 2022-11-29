@@ -1,5 +1,6 @@
 package controller;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import model.Enemigo;
@@ -8,10 +9,17 @@ import model.pocion;
 import model.sala;
 import model.salaArma;
 import model.salaPocion;
+import model.salaTesoro;
 import model.tesoro;
 
 public class config {
     
+    JSONArray armas;
+    JSONArray enemigos;
+    JSONArray pociones;
+    JSONArray zonas;
+    JSONArray tesoros;
+
     
     /** 
      * @param conf
@@ -27,39 +35,60 @@ public class config {
         return config;
     }
 
-    public JSONObject setObjectsOnSala(String objet) throws Exception {
-        JSONObject objeto = null;
+    
+    /** 
+     * @throws Exception
+     */
+    public void setObjectsOnSala() throws Exception {
+        //JSONArray objeto = null;
 
-        if(objet == "arma") {
+        armas = json.Jobject("armas.json");
+        enemigos = json.Jobject("Enemigos.json");
+        pociones = json.Jobject("pociones.json");
+        zonas = json.Jobject("zonas.json");
+        tesoros = json.Jobject("tesoro.json");
 
-            objeto = json.Jobject("armas.json", random.generateRandom(0, 24));
+        /* if(objet == "arma") {
+
+            objeto = json.Jobject("armas.json");
 
         } else if (objet == "enemigo") {
             
-            objeto = json.Jobject("Enemigos.json", random.generateRandom(0, 24));
+            objeto = json.Jobject("Enemigos.json");
 
         } else if (objet == "pocion") {
 
-            objeto = json.Jobject("pociones.json", random.generateRandom(0, 7));
-
+            //objeto = json.Jobject("pociones.json", random.generateRandom(0, 7));
+            objeto = json.Jobject("pociones.json");
+            
         } else if (objet == "zona") {
 
-            objeto = json.Jobject("zonas.json", random.generateRandom(0, 24));
+            //objeto = json.Jobject("zonas.json", (random.generateRandom(1, 25) -1 ));
+            objeto = json.Jobject("zonas.json");
 
         } else if (objet == "tesoro") {
 
-            objeto = json.Jobject("tesoro.json", 0);
+            objeto = json.Jobject("tesoro.json");
 
-        }
+        } */
 
-        return objeto;
     }
 
+
+    
+    /** 
+     * @return sala
+     * @throws Exception
+     */
     public sala createSala() throws Exception {
+        //JSONObject jObject = jArray.optJSONObject(index);
+        setObjectsOnSala();
         sala s = null;
         boolean salaT = false;
-        JSONObject enemigo = setObjectsOnSala("enemigo");
-        JSONObject zona = setObjectsOnSala("zona");
+        int i = random.generateRandom(0, 24);
+        JSONObject enemigo = enemigos.getJSONObject(i);
+        i = random.generateRandom(0, 23);
+        JSONObject zona = zonas.getJSONObject(i);
 
         Enemigo e = new Enemigo(enemigo.getString("nombre"), enemigo.getInt("Poder"), enemigo.getInt("Defensa"));
         arma a;
@@ -70,22 +99,25 @@ public class config {
         sTipe = random.generateRandom(1, 3);
         if (sTipe == 3 && salaT == false) {
             salaT = true;
-            JSONObject tesoro = setObjectsOnSala("tesoro");
+            JSONObject tesoro = tesoros.getJSONObject(0);
             t = new tesoro(tesoro.getString("nombre"));
+
+            s = new salaTesoro(e, zona.getString("nombre"), t);
         } else {
             sTipe = random.generateRandom(1, 2);
         }
         
         if (sTipe == 1) {
             
-            JSONObject arma = setObjectsOnSala("arma");
+            i = random.generateRandom(0, 24);
+            JSONObject arma = armas.getJSONObject(i);
             a = new arma(arma.getString("nombre"), arma.getInt("ataque"));
             
             s = new salaArma(e, zona.getString("nombre"), a);
 
         } else if (sTipe == 2) {
-
-            JSONObject pocion = setObjectsOnSala("pocion");
+            i = random.generateRandom(0, 8);
+            JSONObject pocion = pociones.getJSONObject(i);
             p = new pocion(pocion.getInt("nivel"), pocion.getInt("tipo"), pocion.getString("nombre"));
 
             s = new salaPocion(e, zona.getString("nombre"), p);
