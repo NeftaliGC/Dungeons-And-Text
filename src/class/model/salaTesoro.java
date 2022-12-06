@@ -14,14 +14,6 @@ public class salaTesoro extends sala{
 
     
     /** 
-     * @return tesoro
-     */
-    public tesoro getTesoro() {
-        return this.tesoro;
-    }
-
-    
-    /** 
      * @return String
      */
     @Override
