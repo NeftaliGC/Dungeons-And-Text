@@ -7,7 +7,7 @@
     },
     {
         "id": 1,
-        "nombre": "Araña",
+        "nombre": "Ara\u00f1a",
         "Poder": 3,
         "Defensa": 3
     },
@@ -37,7 +37,7 @@
     },
     {
         "id": 6,
-        "nombre": "Escorpion Gigante",
+        "nombre": "Devora Almas",
         "Poder": 4,
         "Defensa": 2
     },
