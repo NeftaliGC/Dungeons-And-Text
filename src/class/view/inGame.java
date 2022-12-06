@@ -7,7 +7,7 @@ import model.mapa;
 
 public class inGame {
 
-    static jugador p = dungeonsAndText.PLAYER;
+    static jugador p = dungeonsAndText.player;
     static mapa m = dungeonsAndText.MAPA;
     
     

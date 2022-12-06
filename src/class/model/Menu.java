@@ -1,5 +1,6 @@
 package model;
 import java.util.Scanner;
+
 /**
  * Write a description of class Menu here.
  * 
@@ -75,7 +76,10 @@ public class Menu{
         }
     }
 
-    
+    public void reset() {
+        opciones = null;
+    }
+
     /** 
      * @return int
      */

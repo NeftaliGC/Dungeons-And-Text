@@ -56,7 +56,7 @@ public class jugador {
      * @param v
      */
     public void setVida(int v) {
-        this.vida = this.vida + v;
+        this.vida = v;
     }
 
     
@@ -75,8 +75,8 @@ public class jugador {
         return poder;
     }
 
-    public void setPoder() {
-        
+    public void setPoder(int p) {
+        this.poder = p;
     }
 
     
@@ -84,11 +84,11 @@ public class jugador {
      * @return int
      */
     public int getDefensa() {
-        return defensa;
+        return this.defensa;
     }
 
-    public void setDefensa() {
-        
+    public void setDefensa(int d) {
+        this.defensa = d;
     }
 
     
@@ -149,6 +149,10 @@ public class jugador {
      */
     public arma getPuño() {
         return this.puño;
+    }
+
+    public mochila getMochila() {
+        return this.Mochila;
     }
 
 }

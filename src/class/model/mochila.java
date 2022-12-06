@@ -12,21 +12,44 @@ public class mochila {
     public String armasDatos() {
         String s = "";
         for (int i = 0; i < arsenal.length; i++) {
-            s = s + "< " + arsenal[i].getNombre() + " con poder de: " + arsenal[i].getPoder() + " >";
+            if (arsenal[i] != null) {
+                s = s + "< " + arsenal[i].getNombre() + " con poder de: " + arsenal[i].getPoder() + " >";
+            } else {
+                break;
+            }
         }
 
         return s;
     }
 
+    public String armasDatos(int i) {
+        String s = " ";
+        if (arsenal[i] != null) {
+            s = s + "< " + arsenal[i].getNombre() + " con poder de: " + arsenal[i].getPoder() + " >";
+        }
+        return s;
+    }
+    
     public String pocionesDatos() {
         String s = "";
         for (int i = 0; i < Pociones.length; i++) {
-            s = s + "< " + Pociones[i].getNombre() + " con un nivel de: " + Pociones[i].getNivel() + " >";
+            if (Pociones[i] != null) {
+                s = s + "< " + Pociones[i].getNombre() + " con un nivel de: " + Pociones[i].getNivel() + " >";
+            } else {
+                break;
+            }
         }
-
+        
         return s;
     }
-
+    
+    public String pocionesDatos(int i) {
+        String s = " ";
+        if (Pociones[i] != null) {
+            s = s + "< " + Pociones[i].getNombre() + " con un nivel de: " + Pociones[i].getNivel() + " >"; 
+        }
+        return s;
+    }
     
     /** 
      * @param a
@@ -142,6 +165,30 @@ public class mochila {
             return r;
 
         }
+    }
+
+    public pocion sacarPocion(int i) throws  Exception{
+        pocion p;
+
+        if (i >= 0 && i < this.Pociones.length) {
+            if (this.Pociones[i] != null) {
+                p = this.Pociones[i];
+                this.Pociones[i] = null;
+        
+                return p;
+            } else {
+                throw new Exception("No hay nada en la pocision " + i);
+            }
+        } else {
+            throw new Exception("Posicion no valida");
+        }
+    }
+
+    public int pocionesLenght() {
+        return Pociones.length;
+    }
+    public int armasLenght() {
+        return arsenal.length;
     }
 }
  

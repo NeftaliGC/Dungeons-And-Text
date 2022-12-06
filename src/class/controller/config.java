@@ -102,7 +102,7 @@ public class config {
             JSONObject tesoro = tesoros.getJSONObject(0);
             t = new tesoro(tesoro.getString("nombre"));
 
-            s = new salaTesoro(e, zona.getString("nombre"), t);
+            s = new salaTesoro(e, zona.getString("nombre"), t, true);
         } else {
             sTipe = random.generateRandom(1, 2);
         }
@@ -113,14 +113,14 @@ public class config {
             JSONObject arma = armas.getJSONObject(i);
             a = new arma(arma.getString("nombre"), arma.getInt("ataque"));
             
-            s = new salaArma(e, zona.getString("nombre"), a);
+            s = new salaArma(e, zona.getString("nombre"), a, false);
 
         } else if (sTipe == 2) {
             i = random.generateRandom(0, 8);
             JSONObject pocion = pociones.getJSONObject(i);
             p = new pocion(pocion.getInt("nivel"), pocion.getInt("tipo"), pocion.getString("nombre"));
 
-            s = new salaPocion(e, zona.getString("nombre"), p);
+            s = new salaPocion(e, zona.getString("nombre"), p, false);
         }
 
         return s;

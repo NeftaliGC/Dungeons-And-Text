@@ -3,43 +3,45 @@ package model;
 public class sala {
     protected Enemigo enemigo;
     protected String nombre;
+    protected boolean salaT;
 
-    public sala(Enemigo enemi, String name) {
+    public sala(Enemigo enemi, String name, boolean tesoro) {
         this.enemigo = enemi;
         this.nombre = name;
+        this.salaT = tesoro;
+    }
+    
+    public boolean getTesoro() {
+        return salaT;
     }
 
-    
-    /** 
+    /**
      * @return Enemigo
      * @throws Exception
      */
-    public Enemigo getEnemigo() throws Exception{
-        if(this.enemigo == null) {
+    public Enemigo getEnemigo() throws Exception {
+        if (this.enemigo == null) {
             throw new Exception("No hay enemigo");
         } else {
             return this.enemigo;
         }
     }
 
-    
-    /** 
+    /**
      * @param e
      */
     public void setEnemigo(Enemigo e) {
         this.enemigo = e;
     }
 
-    
-    /** 
+    /**
      * @return String
      */
     public String getNombre() {
         return this.nombre;
     }
 
-    
-    /** 
+    /**
      * @return String
      * @throws Exception
      */
@@ -47,24 +49,36 @@ public class sala {
         return "En la sala hay: ";
     }
 
-    
-    /** 
+    /**
      * @param arma
      * @return arma
      */
-    public arma rtArma(arma arma) {
+    public arma getArma(arma arma) {
         arma a = arma;
         return a;
     }
 
-    
-    /** 
+    /**
+     * @param p
+     */
+    public void setArma(arma a) {
+        //this.pocion = p;
+    }
+
+    /**
      * @param pocion
      * @return pocion
      */
-    public pocion rtPocion(pocion pocion) {
+    public pocion getPocion(pocion pocion) {
         pocion p = pocion;
         return p;
     }
-    
+
+    /**
+     * @param p
+     */
+    public void setPocion(pocion p) {
+        //this.pocion = p;
+    }
+
 }

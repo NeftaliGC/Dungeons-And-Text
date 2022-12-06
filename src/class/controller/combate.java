@@ -35,6 +35,8 @@ public class combate {
      * @return boolean[]
      */
     public static boolean[] jGanador(int defensaJugador, int defensaEnemigo) {
+        jugadorGana = false;
+        empate = false;
         if (ataqueEnemigo > defensaJugador) {
             jugadorGana = false;
         } else if (ataqueJugador > defensaEnemigo) {

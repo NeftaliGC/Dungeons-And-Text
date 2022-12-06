@@ -7,8 +7,8 @@ public class salaTesoro extends sala{
 
     private tesoro tesoro;
 
-    public salaTesoro(Enemigo enemi, String name, tesoro t) {
-        super(enemi, name);
+    public salaTesoro(Enemigo enemi, String name, tesoro t, boolean tesoro) {
+        super(enemi, name, tesoro);
         this.tesoro = t;
     }
 

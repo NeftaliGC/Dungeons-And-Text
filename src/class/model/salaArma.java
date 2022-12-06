@@ -3,18 +3,34 @@ package model;
 public class salaArma extends sala {
 
     private arma arma;
+    private pocion poc = null;
     
-    public salaArma(Enemigo enemi, String name, arma a) {
-        super(enemi, name);
+    public salaArma(Enemigo enemi, String name, arma a, boolean tesoro) {
+        super(enemi, name, tesoro);
         this.arma = a;
     }
 
+    @Override
+    public void setPocion(pocion p) {
+        this.poc = p;
+    }
+
+    @Override
+    public pocion getPocion(pocion pocion) {
+        return this.poc;
+    }
     
     /** 
      * @return arma
      */
-    public arma getArma( ) {
+    @Override
+    public arma getArma(arma a) {
         return this.arma;
+    }
+
+    @Override
+    public void setArma(arma a) {
+        this.arma = a;
     }
 
     
@@ -24,23 +40,16 @@ public class salaArma extends sala {
      */
     @Override
     public String getDatos() throws Exception{
-        if (this.arma != null) {
-            return "En la sala hay: " + this.arma.getNombre() + " con un poder de: " + this.arma.getPoder();
+        String s = "";
+        if (this.poc == null && arma == null) {
+            throw new Exception("La sala esta vacia");
         } else {
-            throw new Exception("No hay arma en la sala");
+            if (poc != null) {
+                s = " En la sala tambien hay: " + this.poc.getNombre() + " de nivel: " + this.poc.getNivel();
+            }
+            return "En la sala hay: " + this.arma.getNombre() + " con un poder de: " + this.arma.getPoder() + s;
         }
     }
 
-    
-    /** 
-     * @param arma
-     * @return arma
-     */
-    @Override
-    public arma rtArma(arma arma) {
-        arma a = this.arma;
-        this.arma = arma;
-        return a;
-    }
 
 }
