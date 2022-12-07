@@ -95,7 +95,8 @@ public class dungeonsAndText {
         boolean ejecucionJuego = true;
 
         do {
-            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor(); // limpia pantalla
+            // new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor(); // limpia pantalla windows
+            clear();
             titulo();
 
             int flujo = inicio.leeOpcion();
@@ -119,7 +120,8 @@ public class dungeonsAndText {
                         arma arma_temp;
 
                         do {
-                            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor(); // limpia pantalla
+                            // new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor(); // limpia pantalla
+                            clear();
                             op = 0;
                             s = MAPA.getSala(x, y);
                             Enemigo e = null;
@@ -407,7 +409,8 @@ public class dungeonsAndText {
 // End Game Zone
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
                 case 2:
-                    new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor(); // limpia pantalla
+                    // new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor(); // limpia pantalla
+                    clear();
                     configuracionText();
                     do {
                         ejecucionJuego = true;
@@ -439,7 +442,8 @@ public class dungeonsAndText {
 
                     break;
                 case 3:
-                    new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor(); // limpia pantalla
+                    // new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor(); // limpia pantalla
+                    clear();
                     creditos();
                     System.out.println("Desarolladores:");
                     System.out.println("");
@@ -533,4 +537,10 @@ public class dungeonsAndText {
         } while (true);
         return num;
     }
+
+    public static void clear() {
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
+    }
+
 }
