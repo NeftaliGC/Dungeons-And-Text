@@ -1,9 +1,10 @@
-package view;
+package clasesNoUsadasAun;
 
 import java.io.IOException;
 
 import model.jugador;
 import model.mapa;
+import view.dungeonsAndText;
 
 public class inGame {
 

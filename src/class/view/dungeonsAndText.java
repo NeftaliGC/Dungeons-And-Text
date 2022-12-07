@@ -17,6 +17,19 @@ import model.mochila;
 import model.pocion;
 import model.sala;
 
+
+/**
+ * Class Main.
+ * 
+ * @author Aalan Kalid Ruiz Colin 
+ * @author Fabian Neftaly Guia Cruz 
+ * @author Harumy Genaro González
+ * @author Josué Hernández Ventura 
+ * @author Miguel Omaet Aguilar Martinez 
+ * @version (1.0.0)
+ */
+
+
 /**
  * main
  */
@@ -88,6 +101,10 @@ public class dungeonsAndText {
             int flujo = inicio.leeOpcion();
 
             switch (flujo) {
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Start Game Zone
+
                 case 1:
                     if (config.configCheck(game.getCofig()) && ejecucionJuego == true) {
                         // inGame.game();
@@ -387,6 +404,8 @@ public class dungeonsAndText {
                     }
                     break;
 
+// End Game Zone
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
                 case 2:
                     new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor(); // limpia pantalla
                     configuracionText();
@@ -424,11 +443,11 @@ public class dungeonsAndText {
                     creditos();
                     System.out.println("Desarolladores:");
                     System.out.println("");
-                    System.out.println("Dev: 1");
-                    System.out.println("Dev: 2");
-                    System.out.println("Dev: 3");
-                    System.out.println("Dev: 4");
-                    System.out.println("Dev: 5");
+                    System.out.println("Dev: Aalan Kalid Ruiz Colin");
+                    System.out.println("Dev: Fabian Neftaly Guia Cruz");
+                    System.out.println("Dev: Harumy Genaro González");
+                    System.out.println("Dev: Josué Hernández Ventura");
+                    System.out.println("Dev: Miguel Omaet Aguilar Martinez");
 
                     mensaje("Pulsa ENTER para volver al menu principal: ");
 

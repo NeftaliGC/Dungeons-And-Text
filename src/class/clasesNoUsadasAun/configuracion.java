@@ -1,4 +1,4 @@
-package view;
+package clasesNoUsadasAun;
 
 import java.util.Scanner;
 

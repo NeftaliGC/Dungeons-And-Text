@@ -1,6 +1,17 @@
 package model;
 
 /**
+ * Create salaPocion.
+ * 
+ * @author Aalan Kalid Ruiz Colin 
+ * @author Fabian Neftaly Guia Cruz 
+ * @author Harumy Genaro González
+ * @author Josué Hernández Ventura 
+ * @author Miguel Omaet Aguilar Martinez 
+ * @version (1.0.0)
+ */
+
+/**
  * salaPocion
  */
 public class salaPocion extends sala{
@@ -14,11 +25,20 @@ public class salaPocion extends sala{
     }
 
     
+    
+    /** 
+     * @param a
+     */
     @Override
     public void setArma(arma a) {
         this.arm = a;
     }
     
+    
+    /** 
+     * @param arma
+     * @return arma
+     */
     @Override
     public arma getArma(arma arma) {
         return this.arm;

@@ -2,10 +2,14 @@ package model;
 import java.util.Scanner;
 
 /**
- * Write a description of class Menu here.
+ * Create Menus.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Aalan Kalid Ruiz Colin 
+ * @author Fabian Neftaly Guia Cruz 
+ * @author Harumy Genaro González
+ * @author Josué Hernández Ventura 
+ * @author Miguel Omaet Aguilar Martinez 
+ * @version (1.0.0)
  */
 public class Menu{
     private String[] opciones;

@@ -12,6 +12,17 @@ import model.salaPocion;
 import model.salaTesoro;
 import model.tesoro;
 
+/**
+ * Control objects JSON.
+ * 
+ * @author Aalan Kalid Ruiz Colin 
+ * @author Fabian Neftaly Guia Cruz 
+ * @author Harumy Genaro González
+ * @author Josué Hernández Ventura 
+ * @author Miguel Omaet Aguilar Martinez 
+ * @version (1.0.0)
+ */
+
 public class config {
     
     JSONArray armas;

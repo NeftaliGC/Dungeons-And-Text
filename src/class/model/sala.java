@@ -1,5 +1,16 @@
 package model;
 
+/**
+ * Create father object Sala.
+ * 
+ * @author Aalan Kalid Ruiz Colin 
+ * @author Fabian Neftaly Guia Cruz 
+ * @author Harumy Genaro González
+ * @author Josué Hernández Ventura 
+ * @author Miguel Omaet Aguilar Martinez 
+ * @version (1.0.0)
+ */
+
 public class sala {
     protected Enemigo enemigo;
     protected String nombre;
@@ -11,6 +22,10 @@ public class sala {
         this.salaT = tesoro;
     }
     
+    
+    /** 
+     * @return boolean
+     */
     public boolean getTesoro() {
         return salaT;
     }

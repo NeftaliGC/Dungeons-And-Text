@@ -1,7 +1,16 @@
 package model;
 import controller.random;
 
-
+/**
+ * Create jugador.
+ * 
+ * @author Aalan Kalid Ruiz Colin 
+ * @author Fabian Neftaly Guia Cruz 
+ * @author Harumy Genaro González
+ * @author Josué Hernández Ventura 
+ * @author Miguel Omaet Aguilar Martinez 
+ * @version (1.0.0)
+ */
 
 public class jugador {
     private String Nombre;
@@ -75,6 +84,10 @@ public class jugador {
         return poder;
     }
 
+    
+    /** 
+     * @param p
+     */
     public void setPoder(int p) {
         this.poder = p;
     }
@@ -87,6 +100,10 @@ public class jugador {
         return this.defensa;
     }
 
+    
+    /** 
+     * @param d
+     */
     public void setDefensa(int d) {
         this.defensa = d;
     }
@@ -151,6 +168,10 @@ public class jugador {
         return this.puño;
     }
 
+    
+    /** 
+     * @return mochila
+     */
     public mochila getMochila() {
         return this.Mochila;
     }

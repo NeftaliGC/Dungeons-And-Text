@@ -1,5 +1,16 @@
 package model;
 
+/**
+ * Create mochila.
+ * 
+ * @author Aalan Kalid Ruiz Colin 
+ * @author Fabian Neftaly Guia Cruz 
+ * @author Harumy Genaro González
+ * @author Josué Hernández Ventura 
+ * @author Miguel Omaet Aguilar Martinez 
+ * @version (1.0.0)
+ */
+
 public class mochila {
     private arma[] arsenal;
     private pocion[] Pociones;
@@ -9,6 +20,10 @@ public class mochila {
         this.Pociones = new pocion[tamañoPociones];
     }
 
+    
+    /** 
+     * @return String
+     */
     public String armasDatos() {
         String s = "";
         for (int i = 0; i < arsenal.length; i++) {
@@ -22,6 +37,11 @@ public class mochila {
         return s;
     }
 
+    
+    /** 
+     * @param i
+     * @return String
+     */
     public String armasDatos(int i) {
         String s = " ";
         if (arsenal[i] != null) {
@@ -30,6 +50,10 @@ public class mochila {
         return s;
     }
     
+    
+    /** 
+     * @return String
+     */
     public String pocionesDatos() {
         String s = "";
         for (int i = 0; i < Pociones.length; i++) {
@@ -43,6 +67,11 @@ public class mochila {
         return s;
     }
     
+    
+    /** 
+     * @param i
+     * @return String
+     */
     public String pocionesDatos(int i) {
         String s = " ";
         if (Pociones[i] != null) {
@@ -167,6 +196,12 @@ public class mochila {
         }
     }
 
+    
+    /** 
+     * @param i
+     * @return pocion
+     * @throws Exception
+     */
     public pocion sacarPocion(int i) throws  Exception{
         pocion p;
 
@@ -184,9 +219,17 @@ public class mochila {
         }
     }
 
+    
+    /** 
+     * @return int
+     */
     public int pocionesLenght() {
         return Pociones.length;
     }
+    
+    /** 
+     * @return int
+     */
     public int armasLenght() {
         return arsenal.length;
     }
